@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth ;
+}
+
+.bg-body-tertiary {
+    background-color: #333333 !important;
+    opacity: 1;
+}
+
+
+header {
+    background-image: url("img/slider-02 (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.layer p span::after {
+    content: "|";
+    animation-name: headerAnimtion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white ;
+    font-size: 1.625rem;
+    line-height: 1.9375rem;
+    font-weight: 300;
+}
+
+@keyframes headerAnimtion {
+    0% {content:"|"}
+    3.23% {content:"D|"}
+    6.46% {content:"De|"}
+    9.69% {content:"Des|"}
+    12.92% {content:"Desi|"}
+    16.15% {content:"Desig|"}
+    19.38% {content:"Design|"}
+    22.61% {content:"Designe|"}
+    25.84% {content:"Designer|"}
+    29.07% {content:"Designe|"}
+    32.3% {content:"Design|"}
+    35.53% {content:"Desig|"}
+    38.76% {content:"Desi|"}
+    41.99% {content:"Des|"}
+    45.22% {content:"De|"}
+    48.45% {content:"Dev|"}
+    51.68% {content:"Deve|"}
+    54.91% {content:"Devel|"}
+    58.21% {content:"Develo|"}
+    61.44% {content:"Develop|"}
+    64.67% {content:"Develope|"}
+    67.9% {content:"Developer|"}
+    71.13% {content:"Develope|"}
+    74.36% {content:"Develop|"}
+    74.36% {content:"Develo|"}
+    77.59% {content:"Devel|"}
+    80.82% {content:"Deve|"}
+    84% {content:"Dev|"}
+    87.28% {content:"De|"}
+    90.51% {content:"D|"}
+    93.74% {content:"|"}
+    96.9% {content:""}
+    100% {content:"|"}
+}
+.websiteName{
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
+    color: #ff305b;
+}
+nav ul li a{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.25rem !important;
+    color: white !important;
+}
+
+header h4{
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+    color: white;
+}
+header h1{
+    font-weight: 700;
+    font-size: 4.375rem;
+    line-height: 4.8125rem;
+    color: #ff305b;
+}
+
+header p{
+    color: white;
+    font-size: 1.625rem;
+    line-height: 1.9375rem;
+    font-weight: 300;
+}
+
+nav ul li a:hover{
+    color: #ff305b !important;
+    transition-duration: 0.5s;
+}
+
+/* section about */
+
+#about img{
+    bottom: -5%;
+    right: -5%;
+}
+
+.imgAbout{
+    border: 10px solid #555555;
+    border-radius: 2%;
+    padding: 0;
+}
+.layerAbout{
+    background-color: #696969;
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    top: 100%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+#about .imgAbout:hover .layerAbout{
+    top: 0;
+    opacity: 0.4;
+}
+#about ul li{
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+#about ul li:hover{
+    color: #ff305b;
+}
+#about button{
+    background-color: #ff305b !important;
+    border: #ff305b;
+}
+
+.helloAbout::before{
+    content: "|";
+    color: #ff305b;
+    font-weight: 800;
+}
+#about h3{
+    font-weight: 600;
+    font-size: 2.125rem;
+    line-height: 1.375rem;
+    color: #333333;
+}
+
+#about .col-md-6 p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    color: #555555;
+}
+
+#about .titleAbout {
+    border-bottom: 1px dashed #555555;
+}
+
+#about .detailsAbout h6{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: #333333;
+}
+#about .detailsAbout p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #555555;
+}
+
+
+/* section services */
+#services{
+    background-color: #f1f1f1;
+}
+
+#services h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.875rem;
+    color: #333333;
+}
+#services .headSecrvices::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 47%;
+    bottom: 10px;
+}
+#services .headSecrvicesThree::before{
+    content: "";
+    width: 240px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 40%;
+    bottom: 15px;
+}
+#services .headSecrvicesTwo::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 45%;
+    bottom: 20px;
+}
+
+#services h6{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    color: #333333;
+}
+#services p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    color: #555555;
+}
+#services i{
+    color: #ff305b;
+    font-size: 2.25rem;
+}
+
+
+#services .col-md-3:hover{
+    background-color: white;
+}
+#services .col-md-3:hover i{
+    transform: scale(1.5,1.5);
+}
+
+#services .col-md-3{
+    transition-duration: 0.5s;
+}
+
+
+/* portfolio */
+#portfolio .headSecrvices::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 47%;
+    bottom: 10px;
+}
+#portfolio .headSecrvicesThree::before{
+    content: "";
+    width: 240px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 40%;
+    bottom: 15px;
+}
+#portfolio .headSecrvicesTwo::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 45%;
+    bottom: 20px;
+}
+
+#portfolio .col-md-4{
+    cursor: pointer;
+}
+.layerPortfolio{
+    background-color: #7c7c7c;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+#portfolio .col-md-4:hover .layerPortfolio{
+    opacity: 0.5;
+    top: 0;
+}
+
+.controlPortfolio button{
+    transition-duration: 0.5s;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+#portfolio h2{
+    font-size: 2.5rem;
+    line-height: 1.875rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+.controlPortfolio button:hover{
+    color: #ff305b;
+}
+
+
+/* details website */
+.detailsWebsite{
+    background-color:#f1f1f1 ;
+}
+.detailsWebsite .row .col-md-3 i{
+    color: #ff305b;
+    font-size: 1.625rem;
+}
+
+.detailsWebsite .row .col-md-3 h6{
+    font-size: 1.625rem;
+    line-height: 1.8125rem;
+    color: #333333;
+    font-weight: 800;
+}
+
+.detailsWebsite .row .col-md-3 p{
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    color: #555555;
+}
+
+/* testimonial */
+
+#testimonial img{
+    border-radius: 50% 50%;
+}
+#testimonial .owl-carousel{
+    cursor: grab;
+}
+
+
+#testimonial .backTestimonial{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid #ff305b;
+    border-left: 100px solid #ff305b;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+}
+#testimonial .row .col-4 img{
+    z-index: 99;
+    position: relative;
+}
+
+
+#testimonial .headSecrvices::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 47%;
+    bottom: 10px;
+}
+#testimonial .headSecrvicesThree::before{
+    content: "";
+    width: 240px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 40%;
+    bottom: 15px;
+}
+#testimonial .headSecrvicesTwo::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 45%;
+    bottom: 20px;
+}
+
+#testimonial h2{
+    font-size: 2.5rem;
+    line-height: 1.875rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+#testimonial .row h6{
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 800;
+    color: #555555;
+}
+#testimonial .row p{
+    font-size: .9375rem;
+    line-height: 1.0625rem;
+    font-weight: 600;
+    color: #777777;
+    
+}
+
+#testimonial .row .iconStar i{
+    color: #f1c30d;
+    font-size: 1rem;
+}
+
+#testimonial .row{
+    background-color: #f1f1f1;
+}
+
+/* blog */
+#blog {
+    background-color: #f1f1f1;
+}
+
+#blog .headSecrvices::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 47%;
+    bottom: 10px;
+}
+#blog .headSecrvicesThree::before{
+    content: "";
+    width: 240px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 40%;
+    bottom: 15px;
+}
+#blog .headSecrvicesTwo::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 45%;
+    bottom: 20px;
+}
+
+#blog h2{
+    font-size: 2.5rem;
+    line-height: 1.875rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+#blog .row .col-md-4 h6{
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+    color: #555555;
+}
+
+#blog .row .col-md-4 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+    color: #333333;
+    transition-duration: 1s;
+}
+#blog .row .col-md-4 a:hover{
+    color: #ff305b;
+}
+
+#blog .row .col-md-4 p{
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+}
+
+#blog .row .col-md-4 .readMore{
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+    color: #333333;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+#blog .row .col-md-4 .readMore:hover{
+    color: #ff305b;
+}
+/* contact */
+#contact .headSecrvices::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 47%;
+    bottom: 10px;
+}
+#contact .headSecrvicesThree::before{
+    content: "";
+    width: 240px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 40%;
+    bottom: 15px;
+}
+#contact .headSecrvicesTwo::before{
+    content: "";
+    width: 100px ;
+    height: 1px ;
+    background-color: #ff305b ;
+    position: absolute ;
+    left: 45%;
+    bottom: 20px;
+}
+#contact h2{
+    font-size: 2.5rem;
+    line-height: 1.875rem;
+    font-weight: 800;
+    color: #333333;
+}
+/* footer */
+footer{
+    background-color: #333333;
+}
+footer .iconFooter i{
+    color: white;
+    font-size: 1.125rem;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+footer .iconFooter i:hover{
+    color: #ff305b;
+}
+
+footer h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5625rem;
+    color: white;
+}
+footer h6 a{
+    font-weight: 600;
+    font-size: 1.1875rem;
+    line-height: 1.5625rem;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+footer h6 a:hover{
+    color: #ff305b;
+}
+
+
+
+
+
+
+
+
+
